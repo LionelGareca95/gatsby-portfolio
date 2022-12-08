@@ -2,16 +2,17 @@ import * as React from "react"
 import Nav from "../components/Nav"
 import styled from 'styled-components';
 import Layout from "../components/Layout"
+import Main from "../components/Main";
+import Icons from "../components/Icons";
+
 
 
 const IndexPage = () => {
   return (
     <Layout>
-      <Nav></Nav>
-        <main>
-       
-      
-        </main>
+      <Nav/>
+      <Main />
+      <Icons />
     </Layout>
     
   )

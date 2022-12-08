@@ -14,8 +14,7 @@ const Container = styled.div`
 const List = styled.ul`
     display: flex;
     list-style: none;
-    font-size: 1.5rem;
-   
+    font-size: 1.5rem;   
 `;
 const img = {
   width: 100,  
