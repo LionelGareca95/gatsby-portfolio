@@ -3,7 +3,7 @@
 }
 body {
     margin: 0;
-    padding: 1rem;
+    padding: .5rem;
     background-color: #101213;
     min-height: 100vh;
     cursor: url(../images/iconocursor.svg), auto;
@@ -84,16 +84,5 @@ body {
     } 
   }
 
-  @keyframes hand {
-    from {
-      transform: translateX(0px);
-    }
-    to {
-        transform: translateX(100px);
-    }
-  }
-  span .hand {
-    animation: hand 2s linear infinite;
-  }
-  
+ 
 
