@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import programmer from '../images/programmer.svg'
+import { BsBoxArrowUpRight } from 'react-icons/bs';
 
 const ContainerProject = styled.div`
    margin: 100px 0;
@@ -26,21 +27,21 @@ const Project = () => {
     <>
     
     <ContainerProject>
-      <CardProject>
+      <CardProject className='card'>
           <img src={programmer} alt="" />
-          <p>Projecto</p>
+          <p className='info'><BsBoxArrowUpRight/>Projecto </p>    
       </CardProject>
-      <CardProject>
+      <CardProject className='card'>
           <img src={programmer} alt="" />
-          <p>Projecto</p>
+          <p className='info'><BsBoxArrowUpRight/>Projecto </p>    
       </CardProject>
-      <CardProject>
+      <CardProject className='card'>
           <img src={programmer} alt="" />
-          <p>Projecto</p>
+          <p className='info'><BsBoxArrowUpRight/>Projecto </p>    
       </CardProject>
-      <CardProject>
+      <CardProject className='card'>
           <img src={programmer} alt="" />
-          <p>Projecto</p>
+          <p className='info'><BsBoxArrowUpRight/>Projecto </p>    
       </CardProject>
 
       
