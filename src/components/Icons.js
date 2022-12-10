@@ -13,7 +13,12 @@ const CodeIcons = styled.div`
 `;
 const items = {
     "font-size": 60,
-    "margin": 20
+    "margin": 19
+}
+const icon = {
+ color: "#fff",
+  "font-size": 60,
+  "margin": 19
 }
 
 const Title = styled.h1`
@@ -26,7 +31,7 @@ const Icons = () => {
 
   return (
     <>
-      <Title id='tecnologhies'>Tecnologhies</Title>
+      <Title id='tecnologhies'>Skills</Title>
     <CodeIcons>   
         <i style={items} class="devicon-html5-plain-wordmark colored"></i>      
         <i style={items} class="devicon-css3-plain-wordmark colored"></i>  
@@ -36,7 +41,8 @@ const Icons = () => {
         <i style={items} class="devicon-nodejs-plain colored"></i>
         <i style={items} class="devicon-mongodb-plain-wordmark colored"></i>    
         <i style={items} class="devicon-git-plain-wordmark colored"></i>    
-        <i style={items} class="devicon-github-original-wordmark colored"></i>    
+        <i style={icon} class="devicon-github-original-wordmark colored"></i>
+        <i style={items} class="devicon-gatsby-plain colored"></i>      
     </CodeIcons>
 
     </>

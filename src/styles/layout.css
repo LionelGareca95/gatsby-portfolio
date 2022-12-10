@@ -11,8 +11,8 @@ body {
 
 
  #mouse-scroll {
-    position: fixed;
-    margin: auto;
+    position: absolute;
+    margin: 0 auto;
     left: 50%;
     top: 90%;
     transform: translateX(-50%);

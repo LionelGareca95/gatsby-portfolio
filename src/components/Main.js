@@ -42,7 +42,7 @@ const Main = () => {
         <div style={div}>
           <img style={img} src={programmer} alt="Img Programador" loading='lazy' />
         </div>
-        <div>
+        
         <Link to="tecnologhies" spy={true} smooth={true} offset={50} duration={600}>
           <div id="mouse-scroll">
             <div class="mouse">
@@ -54,7 +54,6 @@ const Main = () => {
             </div>
           </div>
           </Link>
-        </div>
     </ContainerMain>
   )
 }

@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Layout from "../components/Layout"
 import Main from "../components/Main";
 import Icons from "../components/Icons";
+import Project from "../components/Project";
 
 
 
@@ -13,6 +14,7 @@ const IndexPage = () => {
       <Nav/>
       <Main />
       <Icons />
+      <Project />
     </Layout>
     
   )
