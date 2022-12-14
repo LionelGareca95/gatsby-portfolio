@@ -3,16 +3,22 @@ import devicon from 'devicon'
 import styled from 'styled-components'
 
 const CodeIcons = styled.div`
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(95px, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     place-items: center;
-    gap: 50;
+    @media (min-width: 768px) { 
+      grid-template-columns: repeat(3,minmax(0, 1fr))
+    }
+    @media (min-width: 1100px) { 
+      grid-template-columns: repeat(4,minmax(0, 1fr))
+    }
+   
     
 `;
 const items = {
-    "font-size": 60,
+    "font-size": 80,
     "margin": 19
 }
 const icon = {

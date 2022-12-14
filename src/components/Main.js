@@ -1,5 +1,5 @@
 import React from 'react'
-import programmer from '../images/programmer.svg'
+import programmer from '../images/programador.gif'
 import styled from 'styled-components';
 import layout from '../styles/layout.css'
 import {Link} from 'react-scroll'
@@ -15,14 +15,18 @@ const ContainerMain = styled.div`
   }
 
 `;
-
+const Description = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
+`
 const img = {
   width: 340,
   heigth: 340,
 }
-const div = {
-  "margin": "0 auto"
-}
+
 const span = {
   color: "#D14627",
   "font-size": 35
@@ -35,13 +39,13 @@ const title = {
 const Main = () => {
   return (
     <ContainerMain>   
-        <div style={div}>
+        <Description >
             <h1 style={title}><span id='hand'>✌🏻</span> Hi, Mi Name Is <span style={span}>Lionel Gareca</span></h1>
             <p style={title}>And I am Front-End Developer</p>
-        </div>
-        <div style={div}>
+        </Description>
+        <Description >
           <img style={img} src={programmer} alt="Img Programador" loading='lazy' />
-        </div>
+        </Description>
         
         <Link to="tecnologhies" spy={true} smooth={true} offset={50} duration={600}>
           <div id="mouse-scroll">

@@ -5,8 +5,7 @@ import Layout from "../components/Layout"
 import Main from "../components/Main";
 import Icons from "../components/Icons";
 import Project from "../components/Project";
-
-
+import Contact from "../components/Contact";
 
 const IndexPage = () => {
   return (
@@ -15,6 +14,7 @@ const IndexPage = () => {
       <Main />
       <Icons />
       <Project />
+      <Contact />
     </Layout>
     
   )
