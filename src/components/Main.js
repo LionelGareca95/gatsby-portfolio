@@ -6,7 +6,7 @@ import {Link} from 'react-scroll'
 
 const ContainerMain = styled.div`
    margin: 150px auto;
-   min-heigth: 60vh;
+   min-height: 60vh;
    display: grid;
    grid-template-columns: repeat(1, 1fr);
    align-items: center;
@@ -23,8 +23,8 @@ const Description = styled.div`
  
 `
 const img = {
-  width: 340,
-  heigth: 340,
+  width: 400,
+  heigth: 350,
 }
 
 const span = {
@@ -49,12 +49,12 @@ const Main = () => {
         
         <Link to="tecnologhies" spy={true} smooth={true} offset={50} duration={600}>
           <div id="mouse-scroll">
-            <div class="mouse">
-              <div class="mouse-in"></div>
+            <div className="mouse">
+              <div className="mouse-in"></div>
             </div>
             <div>
-                <span class="down-arrow-1"></span>
-                <span class="down-arrow-2"></span>
+                <span className="down-arrow-1"></span>
+                <span className="down-arrow-2"></span>
             </div>
           </div>
           </Link>

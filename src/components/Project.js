@@ -20,7 +20,7 @@ const CardProject = styled.div`
   p {
     display: flex;
     justify-content: center;
-    fontSize: 20px;
+    font-size: 20px;
   }
 `
   const Button = styled.button`
@@ -48,7 +48,7 @@ const CardProject = styled.div`
 
   const Title = styled.h1`
     color: #fff;
-    fontSize: 30;
+    font-size: 30;
     display: flex;
     flex-direction: column; 
     align-items: center;

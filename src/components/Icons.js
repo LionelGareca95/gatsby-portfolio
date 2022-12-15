@@ -28,10 +28,11 @@ const icon = {
 }
 
 const Title = styled.h1`
-display: flex;
-align-items: center;
-justify-content: center;
-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  margin: 2rem 0;
 `
 const Icons = () => {
 
@@ -39,16 +40,16 @@ const Icons = () => {
     <>
       <Title id='tecnologhies'>Skills</Title>
     <CodeIcons>   
-        <i style={items} class="devicon-html5-plain-wordmark colored"></i>      
-        <i style={items} class="devicon-css3-plain-wordmark colored"></i>  
-        <i style={items} class="devicon-sass-original colored"></i>
-        <i style={items} class="devicon-javascript-plain colored"></i>
-        <i style={items} class="devicon-react-original-wordmark colored"></i>
-        <i style={items} class="devicon-nodejs-plain colored"></i>
-        <i style={items} class="devicon-mongodb-plain-wordmark colored"></i>    
-        <i style={items} class="devicon-git-plain-wordmark colored"></i>    
-        <i style={icon} class="devicon-github-original-wordmark colored"></i>
-        <i style={items} class="devicon-gatsby-plain colored"></i>      
+        <i style={items} className="devicon-html5-plain-wordmark colored"></i>      
+        <i style={items} className="devicon-css3-plain-wordmark colored"></i>  
+        <i style={items} className="devicon-sass-original colored"></i>
+        <i style={items} className="devicon-javascript-plain colored"></i>
+        <i style={items} className="devicon-react-original-wordmark colored"></i>
+        <i style={items} className="devicon-nodejs-plain colored"></i>
+        <i style={items} className="devicon-mongodb-plain-wordmark colored"></i>    
+        <i style={items} className="devicon-git-plain-wordmark colored"></i>    
+        <i style={icon} className="devicon-github-original-wordmark colored"></i>
+        <i style={items} className="devicon-gatsby-plain colored"></i>      
     </CodeIcons>
 
     </>

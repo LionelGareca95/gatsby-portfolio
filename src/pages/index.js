@@ -6,6 +6,7 @@ import Main from "../components/Main";
 import Icons from "../components/Icons";
 import Project from "../components/Project";
 import Contact from "../components/Contact";
+import Formulario from "../components/Formulario";
 
 const IndexPage = () => {
   return (
