@@ -1,8 +1,10 @@
 import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import styled from 'styled-components';
+import Swal from 'sweetalert2'
 
 const Btn = styled.button`
+  color: #fff;
   height: 3rem;
   width: 8rem;
   background-color: #D14627;
@@ -21,20 +23,28 @@ const Form = styled.form`
     align-items: center;
     gap: 1rem;
     font-size: 1.5rem;
-
+    color: #fff;
     input {
       padding-left: .5rem;
       width: 20rem;
       height: 2rem;
       border-radius: .5rem;
       font-size: 1.5rem;
+      background-color: rgba(110, 104, 100, .5);
 
+      &:focus {
+        border: 1px solid #f5f5f5;
+        color: #f5f5f5
+      }
       ::placeholder {
         padding-left: .5rem;
+  
       }
 
     }
     textarea {
+      
+      background-color: rgba(110, 104, 100, .5);
       padding-left: .5rem;
       border-radius: .5rem;
       font-size: 1.5rem;
@@ -43,6 +53,7 @@ const Form = styled.form`
       height: 10rem;
       ::placeholder {
         padding-left: .5rem;
+        
       }
     }
    
@@ -54,11 +65,17 @@ function ContactForm() {
   const [state, handleSubmit] = useForm("xwkjeedy");  
 
   if (state.succeeded) {
-   return <p>Thanks for joining!</p>;
+   return Swal.fire({
+    title: 'Message sent succesfully!',
+    text: 'Return to home',
+    icon: 'success',
+    confirmButtonText: 'Ok',
+    confirmButtonColor: '#D14627'
+  })
 }
   
   return (
-      <Form onSubmit={handleSubmit} method="post" action='https://formspree.io/f/xwkjeedy' >
+      <Form onSubmit={handleSubmit} method="post" action='https://formspree.io/f/xwkjeedy' autoComplete='off'>
       <label htmlFor="name">Name</label>
       <input
         id="name"
@@ -83,6 +100,7 @@ function ContactForm() {
         field="email"
         errors={state.errors}
       />
+      <label htmlFor="message">Message</label>
       <textarea
         id="message"
         type="text" 

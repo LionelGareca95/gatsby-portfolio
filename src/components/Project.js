@@ -5,17 +5,25 @@ import { BsBoxArrowUpRight } from 'react-icons/bs';
 import { Link } from "gatsby";
 
 const ContainerProject = styled.div`
-   margin: 100px 0;
-   width: 100%;
-   display: grid;
-   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-   place-items: center;
-   gap: 20px;
+    padding: 2rem 0;
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+    place-items: center;
+    @media (min-width: 950px) { 
+      grid-template-columns: repeat(2,minmax(0, 1fr))
+    }
+     h1 {
+      padding: 2rem;
+     }
+
 `;
 
 const CardProject = styled.div`
   border: 1px solid #fff; 
-  width: 250px;
+  width: 400px;
+
 
   p {
     display: flex;
@@ -53,7 +61,6 @@ const CardProject = styled.div`
     flex-direction: column; 
     align-items: center;
     justify-content: center;
-    margin-top: 2rem;
   `
 const Project = () => {
   return (

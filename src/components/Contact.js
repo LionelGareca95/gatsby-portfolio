@@ -5,6 +5,7 @@ import { MdEmail} from 'react-icons/md';
 import { GrLinkedin} from 'react-icons/gr';
 import { BsGithub, BsWhatsapp } from 'react-icons/bs';
 import Formulario from './Formulario';
+import ideas from '../images/think.png'
 
 
 const Contact = () => {
@@ -23,6 +24,8 @@ const ContainerTitle = styled.div`
   h1, p {
     display: flex;
     justify-content: center;
+    color: #fff;
+    padding-top: 1rem;
   }
   p {
     font-size: 30px;
@@ -35,9 +38,12 @@ const ContainerForm = styled.div`
 `
 const ContactSection = styled.div`
 width: 100%;
-min-height: 30rem;
+min-height: 40rem;
 display: grid;
-grid-template-columns: repeat(2, 1fr);
+@media (min-width: 768px) { 
+  grid-template-columns: repeat(2, 1fr);
+}
+
 place-items: center;
 a {
   display: flex;
@@ -57,9 +63,14 @@ const Icons = styled.div`
   justify-content: center;
   align-items: center;
   gap: 3rem;
-  font-size: 3rem;
+  font-size: 2.5rem;
 `
-
+const Img = styled.img`
+ position: absolute;
+ z-index: -1;
+ height: 10rem;
+ 
+`
 const iconLinkedin = {
   color: "#1B2EED"
 }
@@ -71,9 +82,14 @@ const iconsGithub = {
 }
 
   return (
-    <>
+    <div className='div'>
+
     <Wtp>
-      <Link target="_blank" rel="noopener noreferrer" to='https://api.whatsapp.com/send?phone=3412536684' ><BsWhatsapp className='wtp' style={style}/></Link>
+      <Link 
+        target="_blank" rel="noopener noreferrer" 
+        to='https://api.whatsapp.com/send?phone=3412536684'>
+        <BsWhatsapp className='wtp' style={style}/>
+      </Link>
     </Wtp>
     
     <ContainerTitle>
@@ -86,7 +102,6 @@ const iconsGithub = {
         <Icons>
 
           <Link 
-              css={``}
               target="_blank" rel="noopener noreferrer" 
               to='https://mail.google.com/mail/u/0/#inbox?compose=new'>
               <MdEmail style={iconsMail}/>
@@ -114,7 +129,7 @@ const iconsGithub = {
         </ContainerForm>
 
     </ContactSection>
-    </>
+    </div>
   )
 }
 

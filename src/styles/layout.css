@@ -16,11 +16,7 @@ body {
     cursor: url(../images/iconocursor.svg), auto;
 }
  
-  .img {
-    height: 90vh;
-    width: 100%;
-    color: #fff;
-  }
+  
  #mouse-scroll {
     position: absolute;
     margin: 0 auto;
@@ -31,16 +27,16 @@ body {
   }
   #mouse-scroll span{
     display: block;
-    width: 5px; 
-    height: 5px;
+    width: 10px; 
+    height: 10px;
     transform: rotate(45deg);
     border-right: 3px solid var(--naranja); 
     border-bottom: 3px solid var(--naranja);
     margin: 0 0 3px 5px;
   }
   #mouse-scroll .mouse {
-    height: 21px;
-    width: 14px;
+    height: 35px;
+    width: 20px;
     border-radius: 10px;
     transform: none;
     border: 2px solid var(--naranja);
@@ -105,8 +101,8 @@ body {
   }
   
   .card {
-    width: 250px;
-    height: 280px;
+    width: 400px;
+    height: 350px;
     border-radius: 10px;
     padding: 1.5rem;
     position: relative;
@@ -159,4 +155,12 @@ body {
     
     /* Seccion Contacto */
 
-  
+  .div {
+    background: url("../images/backgroundpc.jpg"), rgba(0, 0, 0, 0.7);
+    background-blend-mode: darken;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 60vh;
+    
+  }

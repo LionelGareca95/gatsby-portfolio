@@ -14,8 +14,7 @@ const CodeIcons = styled.div`
     @media (min-width: 1100px) { 
       grid-template-columns: repeat(4,minmax(0, 1fr))
     }
-   
-    
+     
 `;
 const items = {
     "font-size": 80,
