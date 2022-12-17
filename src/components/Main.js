@@ -20,6 +20,7 @@ const Description = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100%;
  
 `
 const img = {
@@ -27,21 +28,13 @@ const img = {
   heigth: 350,
 }
 
-const span = {
-  color: "#D14627",
-  "font-size": 35
-}
-const title = { 
-  "font-size": 25,
-  "color": "#fff"
-}
-
 const Main = () => {
   return (
     <ContainerMain>   
-        <Description >
-            <h1 style={title}><span id='hand'>✌🏻</span> Hi, Mi Name Is <span style={span}>Lionel Gareca</span></h1>
-            <p style={title}>And I am Front-End Developer</p>
+        <Description>
+            <h2><span>👋</span>  Hi, mi name is</h2> 
+            <h1 className='first title'>Front-End Developer</h1>
+            <h1 className='second title'>Front-End Developer</h1>
         </Description>
         <Description >
           <img style={img} src={programmer} alt="Img Programador" loading='lazy' />

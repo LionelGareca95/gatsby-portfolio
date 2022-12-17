@@ -76,45 +76,43 @@ function ContactForm() {
   
   return (
       <Form onSubmit={handleSubmit} method="post" action='https://formspree.io/f/xwkjeedy' autoComplete='off'>
-      <label htmlFor="name">Name</label>
-      <input
-        id="name"
-        type="name" 
-        name="name"
-        placeholder='Name'
-      />
-       <ValidationError 
-        prefix="Name" 
-        field="name"
-        errors={state.errors}
-      />
-      <label htmlFor="email">Email</label>
-      <input
-        id="email"
-        type="email" 
-        name="email"
-        placeholder='Email'
-      />
-      <ValidationError 
-        prefix="Email" 
-        field="email"
-        errors={state.errors}
-      />
-      <label htmlFor="message">Message</label>
-      <textarea
-        id="message"
-        type="text" 
-        name="message" 
-        placeholder='message'
-      />
-      <ValidationError 
-        prefix="Message" 
-        field="message"
-        errors={state.errors}
-      />
-      <Btn type="submit" disabled={state.submitting}>
-        Submit
-      </Btn>
+      <fieldset>Send a message</fieldset>
+      <div class="field">
+        <input 
+          type="text" 
+          name='name' 
+          required 
+          autocomplete="off" 
+        />
+        <label for="username" title='Name' data-title='Name'
+        />
+      </div>
+        <ValidationError prefix="Name" field="name" errors={state.errors}/>
+
+      <div class="field">
+        <input 
+          type="email" 
+          name='Email' 
+          required 
+          autocomplete="off" 
+        />
+        <label for="email" title='Email' data-title='Email'/>
+      </div>
+      <ValidationError prefix="Email" field="Email" errors={state.errors}/>
+
+      <div class="field">
+        <textarea 
+          type="text" 
+          name='message' 
+          required 
+          autocomplete="off" 
+        />
+        <label className='message' for="Message" title='Message' data-title='Message'/>
+      </div>
+      <ValidationError prefix="Message" field="Message" errors={state.errors}/>
+
+      <Btn type="submit" disabled={state.submitting}>Submit</Btn>
+      
     </Form>
   );
 }
