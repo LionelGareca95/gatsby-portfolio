@@ -5,7 +5,7 @@ import layout from '../styles/layout.css'
 import {Link} from 'react-scroll'
 
 const ContainerMain = styled.div`
-   margin: 150px auto;
+   margin: 132px auto;
    min-height: 60vh;
    display: grid;
    grid-template-columns: repeat(1, 1fr);

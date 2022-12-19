@@ -21,6 +21,7 @@ const Contact = () => {
 `;
 
 const ContainerTitle = styled.div`
+margin-top: 8rem;
   h1, p {
     display: flex;
     justify-content: center;
@@ -81,6 +82,14 @@ const iconsGithub = {
   color: "#FFF"
 }
 
+const Footer = styled.div`
+  color: white;
+  display: flex;
+  align-items: center; 
+  justify-content:center;
+  padding-bottom: .5rem;
+`
+
   return (
     <div className='div'>
 
@@ -129,6 +138,10 @@ const iconsGithub = {
         </ContainerForm>
 
     </ContactSection>
+    
+    <Footer>
+        <p>All rigth reserved &copy; Lionel Gareca</p>
+    </Footer>
     </div>
   )
 }

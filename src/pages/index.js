@@ -6,11 +6,13 @@ import Main from "../components/Main";
 import Icons from "../components/Icons";
 import Project from "../components/Project";
 import Contact from "../components/Contact";
-import Formulario from "../components/Formulario";
+import Background from "../components/Background";
+
 
 const IndexPage = () => {
   return (
-    <Layout>
+    <Layout>  
+      <Background/>
       <Nav/>
       <Main />
       <Icons />

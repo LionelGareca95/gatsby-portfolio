@@ -3,10 +3,11 @@ import styled from 'styled-components';
 import afilados from '../images/afilados.png';
 import { BsBoxArrowUpRight } from 'react-icons/bs';
 import { Link } from "gatsby";
+import BackgroundBottom from './BackgroundBottom';
 
 const ContainerProject = styled.div`
     padding: 2rem 0;
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
     display: grid;
     gap: 1rem;
@@ -22,7 +23,7 @@ const ContainerProject = styled.div`
 
 const CardProject = styled.div`
   border: 1px solid #fff; 
-  width: 400px;
+  width: 380px;
 
 
   p {
@@ -62,9 +63,13 @@ const CardProject = styled.div`
     align-items: center;
     justify-content: center;
   `
+
+  const Container = styled.div`
+    background-color: #48403b;
+  `
 const Project = () => {
   return (
-    <>
+    <Container>
         <Title>Projects</Title>
     <ContainerProject>
           
@@ -111,8 +116,8 @@ const Project = () => {
       
        
     </ContainerProject>
-
-    </>
+      <BackgroundBottom />
+    </Container>
   )
 }
 

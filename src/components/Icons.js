@@ -33,10 +33,14 @@ const Title = styled.h1`
   color: #fff;
   margin: 2rem 0;
 `
+
+const Container = styled.div`
+background-color: #48403b;
+`
 const Icons = () => {
 
   return (
-    <>
+    <Container>
       <Title id='tecnologhies'>Skills</Title>
     <CodeIcons>   
         <i style={items} className="devicon-html5-plain-wordmark colored"></i>      
@@ -51,7 +55,7 @@ const Icons = () => {
         <i style={items} className="devicon-gatsby-plain colored"></i>      
     </CodeIcons>
 
-    </>
+    </Container>
   )
 }
 

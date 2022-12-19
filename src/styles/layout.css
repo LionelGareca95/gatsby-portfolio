@@ -10,6 +10,7 @@
  
 }
 body {
+  width: 100%;
     margin: 0;
     background-color: #101213;
     min-height: 100vh;
@@ -156,13 +157,8 @@ body {
     /* Seccion Contacto */
 
   .div {
-    background: url("../images/backgroundpc.jpg"), rgba(0, 0, 0, 0.7);
-    background-blend-mode: darken;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     min-height: 60vh;
-    
+  
   }
  /* Efecto letras onduladas */
   .title {
@@ -175,6 +171,7 @@ body {
     color: white;
   }
   .first {
+    font-size: 2rem;
     color: black;  
   text-shadow:
     -1px -1px 0 white, 
@@ -183,6 +180,7 @@ body {
     1px 1px 0 white;  
   }
   .second {
+    font-size: 2rem;
     color: #D14627;
     animation: second 3s ease-in-out infinite;
   }
@@ -288,4 +286,49 @@ body {
 .field textarea:focus {
   outline: 0;
   border-color: orangered;
+}
+
+/*Wave effect SVG*/
+.custom-shape-divider-bottom-1671459789 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1671459789 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 140px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1671459789 .shape-fill {
+  fill: #48403b;
+}
+
+/*Background Bottom*/
+.custom-shape-divider-top-1671464546 {
+  position: absolute;
+  top: 100;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1671464546 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 155px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1671464546 .shape-fill {
+  fill: #48403B;
 }
