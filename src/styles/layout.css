@@ -1,6 +1,10 @@
 :root {
     --naranja: #D14627;
 }
+html {
+  overflow-x: hidden; 
+  max-width: 100%;
+}
 *{
   margin: 0; 
   padding: 0;
@@ -9,20 +13,23 @@
   border: none;
  
 }
+.container {
+  max-width: 100%;
+  overflow-x: hidden; 
+}
 body {
-  width: 100%;
+    max-width: 100%;
     margin: 0;
     background-color: #101213;
-    min-height: 100vh;
     cursor: url(../images/iconocursor.svg), auto;
 }
  
-  
+
  #mouse-scroll {
     position: absolute;
     margin: 0 auto;
     left: 50%;
-    top: 80%;
+    top: 100;
     transform: translateX(-50%);
     z-index: 9999;
   }
@@ -102,7 +109,7 @@ body {
   }
   
   .card {
-    width: 400px;
+    max-width: 100%;
     height: 350px;
     border-radius: 10px;
     padding: 1.5rem;
@@ -111,10 +118,12 @@ body {
     align-items: center;
     justify-content: center;
     transition: 0.4s ease-out;
+    background: rgba(0, 0, 0, 0.6);
     
   }
     .card:hover {
-      transform: translateY(-20px); }
+      transform: translateY(-20px); 
+    }
       .card:hover:before {
         opacity: 1; }
       .card:hover .info {
@@ -127,7 +136,7 @@ body {
       top: 0;
       left: 0;
       display: block;
-      width: 100%;
+      max-width: 100%;
       height: 100%;
       border-radius: 10px;
       background: rgba(0, 0, 0, 0.6);
@@ -156,23 +165,26 @@ body {
     
     /* Seccion Contacto */
 
-  .div {
-    min-height: 60vh;
-  
-  }
+ 
  /* Efecto letras onduladas */
   .title {
-    font-size: 2.5rem;
     position: absolute;
+  }
+  .titulo {
+    display: flex;
+    font-size: 2rem;
   }
   h2 {
     position: relative;
-    bottom: 3rem;
+    bottom: 4rem;
     color: white;
+    padding: 5px;
   }
+ 
   .first {
     font-size: 2rem;
-    color: black;  
+    color: black; 
+    
   text-shadow:
     -1px -1px 0 white, 
     1px -1px 0 white,
@@ -287,32 +299,14 @@ body {
   outline: 0;
   border-color: orangered;
 }
-
-/*Wave effect SVG*/
-.custom-shape-divider-bottom-1671459789 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
+.imagen {
+  margin-bottom: -5px;
+  max-width: 100%;
 }
 
-.custom-shape-divider-bottom-1671459789 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 140px;
-  transform: rotateY(180deg);
-}
-
-.custom-shape-divider-bottom-1671459789 .shape-fill {
-  fill: #48403b;
-}
 
 /*Background Bottom*/
-.custom-shape-divider-top-1671464546 {
+.custom-shape-divider-top-1671465536 {
   position: absolute;
   top: 100;
   left: 0;
@@ -321,14 +315,14 @@ body {
   line-height: 0;
 }
 
-.custom-shape-divider-top-1671464546 svg {
+.custom-shape-divider-top-1671465536 svg {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 155px;
+  height: 79px;
   transform: rotateY(180deg);
 }
 
-.custom-shape-divider-top-1671464546 .shape-fill {
+.custom-shape-divider-top-1671465536 .shape-fill {
   fill: #48403B;
 }

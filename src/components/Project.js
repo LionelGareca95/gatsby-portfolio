@@ -22,8 +22,7 @@ const ContainerProject = styled.div`
 `;
 
 const CardProject = styled.div`
-  border: 1px solid #fff; 
-  width: 380px;
+  width: 350px;
 
 
   p {
@@ -53,15 +52,18 @@ const CardProject = styled.div`
   align-items: center;
   justify-content: center;
   padding-bottom: 1.8rem;
+
+
   `;
 
-  const Title = styled.h1`
+  const Titulo = styled.h1`
     color: #fff;
     font-size: 30;
     display: flex;
     flex-direction: column; 
     align-items: center;
     justify-content: center;
+    padding: 2rem;
   `
 
   const Container = styled.div`
@@ -70,11 +72,11 @@ const CardProject = styled.div`
 const Project = () => {
   return (
     <Container>
-        <Title>Projects</Title>
+        <Titulo>Projects</Titulo>
     <ContainerProject>
           
       <ContainerCard>
-        <h1 className='title'>Afilados Rosario</h1>
+        <h1 className='titulo'>Afilados Rosario</h1>
       <CardProject className='card'>
             <img src={afilados} alt="Imagen Afilados" loading='lazy' />
           <Link to='https://www.afiladosrosario.com.ar/'>
@@ -84,7 +86,7 @@ const Project = () => {
       </ContainerCard>
 
       <ContainerCard>
-        <h1 className='title'>Afilados Rosario</h1>
+        <h1 className='titulo'>Afilados Rosario</h1>
       <CardProject className='card'>
             <img src={afilados} alt="Imagen Afilados" loading='lazy' />
           <Link to='https://www.afiladosrosario.com.ar/'>
@@ -94,7 +96,7 @@ const Project = () => {
       </ContainerCard>
 
       <ContainerCard>
-        <h1 className='title'>Afilados Rosario</h1>
+        <h1 className='titulo'> Afilados Rosario</h1>
       <CardProject className='card'>
             <img src={afilados} alt="Imagen Afilados" loading='lazy' />
           <Link to='https://www.afiladosrosario.com.ar/'>
@@ -104,7 +106,7 @@ const Project = () => {
       </ContainerCard>
 
       <ContainerCard>
-        <h1 className='title'>Afilados Rosario</h1>
+        <h1 className='titulo'>Afilados Rosario</h1>
       <CardProject className='card'>
             <img src={afilados} alt="Imagen Afilados" loading='lazy' />
           <Link to='https://www.afiladosrosario.com.ar/'>
@@ -113,9 +115,8 @@ const Project = () => {
       </CardProject>
       </ContainerCard>
 
-      
-       
     </ContainerProject>
+
       <BackgroundBottom />
     </Container>
   )

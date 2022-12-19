@@ -12,10 +12,11 @@ import Background from "../components/Background";
 const IndexPage = () => {
   return (
     <Layout>  
-      <Background/>
       <Nav/>
       <Main />
+      <Background />
       <Icons />
+      
       <Project />
       <Contact />
     </Layout>

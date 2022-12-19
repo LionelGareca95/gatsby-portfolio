@@ -1,15 +1,17 @@
 import React from 'react'
 import programmer from '../images/programador.gif'
 import styled from 'styled-components';
-import layout from '../styles/layout.css'
 import {Link} from 'react-scroll'
+import Background from './Background';
+
 
 const ContainerMain = styled.div`
    margin: 132px auto;
-   min-height: 60vh;
+   height: 50vh;
    display: grid;
    grid-template-columns: repeat(1, 1fr);
    align-items: center;
+   justify-content: center;
    @media (min-width: 720px) {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -23,16 +25,20 @@ const Description = styled.div`
   height: 100%;
  
 `
+
+
 const img = {
-  width: 400,
+  "max-width": 400,
   heigth: 350,
 }
 
 const Main = () => {
   return (
-    <ContainerMain>   
+
+    <ContainerMain>
         <Description>
             <h2><span>👋</span>  Hi, mi name is</h2> 
+            <h2>&nbsp;&nbsp; &nbsp; &nbsp;Lionel Gareca</h2>       
             <h1 className='first title'>Front-End Developer</h1>
             <h1 className='second title'>Front-End Developer</h1>
         </Description>
@@ -50,8 +56,9 @@ const Main = () => {
                 <span className="down-arrow-2"></span>
             </div>
           </div>
-          </Link>
+          </Link>         
     </ContainerMain>
+    
   )
 }
 

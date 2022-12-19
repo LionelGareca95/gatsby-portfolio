@@ -31,7 +31,7 @@ const Title = styled.h1`
   align-items: center;
   justify-content: center;
   color: #fff;
-  margin: 2rem 0;
+  padding: 2rem;
 `
 
 const Container = styled.div`
@@ -41,6 +41,7 @@ const Icons = () => {
 
   return (
     <Container>
+      
       <Title id='tecnologhies'>Skills</Title>
     <CodeIcons>   
         <i style={items} className="devicon-html5-plain-wordmark colored"></i>      

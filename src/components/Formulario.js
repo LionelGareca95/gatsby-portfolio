@@ -5,8 +5,8 @@ import Swal from 'sweetalert2'
 
 const Btn = styled.button`
   color: #fff;
-  height: 3rem;
-  width: 8rem;
+  height: 2.5rem;
+  width: 7.5rem;
   background-color: #D14627;
   font-size: 1.5rem;
   border-radius: .5rem;
