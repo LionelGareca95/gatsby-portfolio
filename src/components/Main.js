@@ -37,7 +37,7 @@ const Main = () => {
 
     <ContainerMain>
         <Description>
-            <h2><span>👋</span>  Hi, mi name is</h2> 
+            <h2><span className='span'>👋</span>  Hi, mi name is</h2> 
             <h2>&nbsp;&nbsp; &nbsp; &nbsp;Lionel Gareca</h2>       
             <h1 className='first title'>Front-End Developer</h1>
             <h1 className='second title'>Front-End Developer</h1>
