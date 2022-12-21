@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import afilados from '../images/afilados.png';
+import afilados from '../images/afilados.webp';
 import { BsBoxArrowUpRight } from 'react-icons/bs';
 import { Link } from "gatsby";
-import BackgroundBottom from './BackgroundBottom';
+import {FcBriefcase} from 'react-icons/Fc'
 
 const ContainerProject = styled.div`
     padding: 2rem 0;
@@ -60,25 +60,29 @@ const CardProject = styled.div`
     color: #fff;
     font-size: 30;
     display: flex;
-    flex-direction: column; 
     align-items: center;
     justify-content: center;
     padding: 2rem;
   `
 
   const Container = styled.div`
-    background-color: #48403b;
+    background-color: #302F2E;
   `
+ const ProjectImg = styled.img.attrs({
+  src: `${afilados}`
+})`
+
+`;
 const Project = () => {
   return (
     <Container>
-        <Titulo>Projects</Titulo>
+        <Titulo>Projects&nbsp;<FcBriefcase/></Titulo>
     <ContainerProject>
           
       <ContainerCard>
         <h1 className='titulo'>Afilados Rosario</h1>
       <CardProject className='card'>
-            <img src={afilados} alt="Imagen Afilados" loading='lazy' />
+            <ProjectImg loading='lazy' />
           <Link to='https://www.afiladosrosario.com.ar/'>
             <Button className='info'><BsBoxArrowUpRight/> View </Button>   
           </Link>
@@ -88,7 +92,7 @@ const Project = () => {
       <ContainerCard>
         <h1 className='titulo'>Afilados Rosario</h1>
       <CardProject className='card'>
-            <img src={afilados} alt="Imagen Afilados" loading='lazy' />
+          <ProjectImg loading='lazy' />
           <Link to='https://www.afiladosrosario.com.ar/'>
             <Button className='info'><BsBoxArrowUpRight/> View </Button>   
           </Link>
@@ -98,7 +102,7 @@ const Project = () => {
       <ContainerCard>
         <h1 className='titulo'> Afilados Rosario</h1>
       <CardProject className='card'>
-            <img src={afilados} alt="Imagen Afilados" loading='lazy' />
+          <ProjectImg loading='lazy' />
           <Link to='https://www.afiladosrosario.com.ar/'>
             <Button className='info'><BsBoxArrowUpRight/> View </Button>   
           </Link>
@@ -108,7 +112,7 @@ const Project = () => {
       <ContainerCard>
         <h1 className='titulo'>Afilados Rosario</h1>
       <CardProject className='card'>
-            <img src={afilados} alt="Imagen Afilados" loading='lazy' />
+            <ProjectImg loading='lazy' />
           <Link to='https://www.afiladosrosario.com.ar/'>
             <Button className='info'><BsBoxArrowUpRight/> View </Button>   
           </Link>
@@ -117,7 +121,6 @@ const Project = () => {
 
     </ContainerProject>
 
-      <BackgroundBottom />
     </Container>
   )
 }

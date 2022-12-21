@@ -1,5 +1,6 @@
 :root {
     --naranja: #D14627;
+    --gris: #3d3734;
 }
 html {
   overflow-x: hidden; 
@@ -21,7 +22,7 @@ body {
     max-width: 100%;
     margin: 0;
     background-color: #101213;
-    cursor: url(../images/iconocursor.svg), auto;
+
 }
  
 
@@ -255,7 +256,8 @@ body {
  }
   .field input {
     width: 100%;
-    line-height: 30px;
+    height: 40px;
+    line-height: 40px;
     padding: 0 15px;
     box-sizing: border-box;
     font-size: 14px;
@@ -279,7 +281,6 @@ body {
     width: 100%;
     line-height: 30px;
     padding: 0 15px;
-    box-sizing: border-box;
     font-size: 14px;
     color: #fff;
     border-radius: 3px;
@@ -303,29 +304,11 @@ body {
   margin-bottom: -5px;
   max-width: 100%;
 }
-
-
-/*Background Bottom*/
-.custom-shape-divider-top-1671465536 {
-  position: absolute;
-  top: 100;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
+.imagen2{
+  max-width: 100%;
 }
 
-.custom-shape-divider-top-1671465536 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 79px;
-  transform: rotateY(180deg);
-}
 
-.custom-shape-divider-top-1671465536 .shape-fill {
-  fill: #48403B;
-}
 
 /* Hand animation Main*/
 
@@ -347,3 +330,5 @@ body {
  60% { transform: rotate( 0.0deg) }  
 100% { transform: rotate( 0.0deg) }
 }
+
+/*Validacion formulario */

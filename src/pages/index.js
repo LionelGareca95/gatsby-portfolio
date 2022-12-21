@@ -16,7 +16,6 @@ const IndexPage = () => {
       <Main />
       <Background />
       <Icons />
-      
       <Project />
       <Contact />
     </Layout>

@@ -5,8 +5,7 @@ import { MdEmail} from 'react-icons/md';
 import { GrLinkedin} from 'react-icons/gr';
 import { BsGithub, BsWhatsapp } from 'react-icons/bs';
 import Formulario from './Formulario';
-import ideas from '../images/think.png'
-
+import BackgroundBottom from './BackgroundBottom';
 
 const Contact = () => {
 
@@ -91,8 +90,8 @@ const Footer = styled.div`
 `
 
   return (
-    <div className='div'>
-
+    <div>
+      <BackgroundBottom/>
     <Wtp>
       <Link 
         target="_blank" rel="noopener noreferrer" 

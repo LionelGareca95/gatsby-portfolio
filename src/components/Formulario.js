@@ -2,6 +2,7 @@ import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import styled from 'styled-components';
 import Swal from 'sweetalert2'
+import { useState, useEffect } from 'react'
 
 const Btn = styled.button`
   color: #fff;
@@ -58,11 +59,60 @@ const Form = styled.form`
     }
    
 `;
-
+const Error = styled.div`
+color: red;
+font-size: 1rem;
+font-weight: 700;
+padding: 5px;
+`
 
 function ContactForm() {
 
   const [state, handleSubmit] = useForm("xwkjeedy");  
+  const [errorName, setErrorName] = useState(null)
+  const [errorEmail, setErrorEmail] = useState(null)
+  const [nombre, setNombre] = useState('')
+  const [correo, setCorreo] = useState('')
+
+// Validar Nombre
+function validarNombre(nombre) {
+  return /^[A-Za-z\ ]{3,20}$/.test(nombre)
+}
+
+const handleChangeNombre = e => {
+  if (!validarNombre(e.target.value)) {
+    setErrorName('Nombre Invalido')
+  } else {
+    setErrorName(null)
+  }
+  setNombre(e.target.value)
+}
+
+useEffect(() => {
+  validarNombre()
+}, [nombre])
+
+// Validar Email
+function validarCorreo(email) {
+  return /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
+    email
+  )
+}
+
+const handleChangeEmail = e => {
+  if (!validarCorreo(e.target.value)) {
+    setErrorEmail('email invalido')
+  } else {
+    setErrorEmail(null)
+  }
+
+  setCorreo(e.target.value)
+}
+
+useEffect(() => {
+  validarCorreo()
+}, [correo])
+
 
   if (state.succeeded) {
    return Swal.fire({
@@ -73,45 +123,51 @@ function ContactForm() {
     confirmButtonColor: '#D14627'
   })
 }
-  
+
+
   return (
-      <Form onSubmit={handleSubmit} method="post" action='https://formspree.io/f/xwkjeedy' autoComplete='off'>
+      <Form onSubmit={handleSubmit} method="POST" action='https://formspree.io/f/xwkjeedy' autoComplete='off'>
       <fieldset>Send a message</fieldset>
       <div class="field">
         <input 
           type="text" 
-          name='name' 
+          name='name'
+          id='name' 
           required 
-          autocomplete="off" 
+          autoComplete="off" 
+          onChange={handleChangeNombre}
+
         />
-        <label for="username" title='Name' data-title='Name'
-        />
+        <label htmlFor='name' title='Name' data-title='Name'/>
+        {errorName && <Error>{errorName}</Error>}
       </div>
         <ValidationError prefix="Name" field="name" errors={state.errors}/>
-
+        
       <div class="field">
         <input 
           type="email" 
-          name='Email' 
+          name='email'
+          id='email' 
           required 
-          autocomplete="off" 
+          autoComplete="off" 
+          onChange={handleChangeEmail}
         />
-        <label for="email" title='Email' data-title='Email'/>
+        <label htmlFor='email' title='Email' data-title='Email'/>
+        {errorEmail && <Error>{errorEmail}</Error>}
       </div>
-      <ValidationError prefix="Email" field="Email" errors={state.errors}/>
 
       <div class="field">
         <textarea 
           type="text" 
           name='message' 
           required 
-          autocomplete="off" 
+          id='message'
+          autoComplete="off"
         />
-        <label className='message' for="Message" title='Message' data-title='Message'/>
+        <label className='message' htmlFor='Message' title='Message' data-title='Message'/>
       </div>
-      <ValidationError prefix="Message" field="Message" errors={state.errors}/>
 
-      <Btn type="submit" disabled={state.submitting}>Submit</Btn>
+      <Btn type="submit">Submit</Btn>
       
     </Form>
   );
