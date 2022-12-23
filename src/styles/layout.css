@@ -171,10 +171,7 @@ body {
   .title {
     position: absolute;
   }
-  .titulo {
-    display: flex;
-    font-size: 2rem;
-  }
+ 
   h2 {
     position: relative;
     bottom: 4rem;

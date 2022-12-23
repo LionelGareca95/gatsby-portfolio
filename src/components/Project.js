@@ -22,8 +22,8 @@ const ContainerProject = styled.div`
 `;
 
 const CardProject = styled.div`
-  width: 350px;
-
+    width: 100%;
+     margin: 5px;
 
   p {
     display: flex;
@@ -73,6 +73,13 @@ const CardProject = styled.div`
 })`
 
 `;
+const Parrafo = styled.div`
+max-width: 600px;
+  padding: 1rem;
+  margin: 0 auto;
+  text-align: justify;
+`
+
 const Project = () => {
   return (
     <Container>
@@ -80,6 +87,57 @@ const Project = () => {
     <ContainerProject>
           
       <ContainerCard>
+        <h1>Afilados Rosario</h1>
+      <CardProject className='card'>
+            <ProjectImg loading='lazy' />
+          <Link to='https://www.afiladosrosario.com.ar/'>
+            <Button className='info'><BsBoxArrowUpRight/> View </Button>   
+          </Link>
+      </CardProject>
+      <Parrafo>
+        <p>Se han utilizado las tecnologias de HTML-CSS-Javascript-Sass
+          Se ha utilizado una libreria llamada Swiper Js que incluye
+          una galeria de imagenes con los distintos productos. Contiene enlaces a redes sociales y un mapa con la localizacion.
+          Es una empresa familiar que ofrece servicios de afilados. al estar vinculado a Google Mi negocio, aumento exponencialmente su clientela.
+        </p>
+      </Parrafo>
+      </ContainerCard>
+
+      <ContainerCard>
+        <h1>Afilados Rosario</h1>
+      <CardProject className='card'>
+          <ProjectImg loading='lazy' />
+          <Link to='https://www.afiladosrosario.com.ar/'>
+            <Button className='info'><BsBoxArrowUpRight/> View </Button>   
+          </Link>
+      </CardProject>
+      <Parrafo>
+        <p>Se han utilizado las tecnologias de HTML-CSS-Javascript-Sass
+          Se ha utilizado una libreria llamada Swiper Js que incluye
+          una galeria de imagenes con los distintos productos. Contiene enlaces a redes sociales y un mapa con la localizacion.
+          Es una empresa familiar que ofrece servicios de afilados. al estar vinculado a Google Mi negocio, aumento exponencialmente su clientela.
+        </p>
+      </Parrafo>
+      </ContainerCard>
+
+      <ContainerCard>
+        <h1> Afilados Rosario</h1>
+      <CardProject className='card'>
+          <ProjectImg loading='lazy' />
+          <Link to='https://www.afiladosrosario.com.ar/'>
+            <Button className='info'><BsBoxArrowUpRight/> View </Button>   
+          </Link>
+      </CardProject>
+      <Parrafo>
+        <p>Se han utilizado las tecnologias de HTML-CSS-Javascript-Sass
+          Se ha utilizado una libreria llamada Swiper Js que incluye
+          una galeria de imagenes con los distintos productos. Contiene enlaces a redes sociales y un mapa con la localizacion.
+          Es una empresa familiar que ofrece servicios de afilados. al estar vinculado a Google Mi negocio, aumento exponencialmente su clientela.
+        </p>
+      </Parrafo>
+      </ContainerCard>
+
+      <ContainerCard>
         <h1 className='titulo'>Afilados Rosario</h1>
       <CardProject className='card'>
             <ProjectImg loading='lazy' />
@@ -87,36 +145,13 @@ const Project = () => {
             <Button className='info'><BsBoxArrowUpRight/> View </Button>   
           </Link>
       </CardProject>
-      </ContainerCard>
-
-      <ContainerCard>
-        <h1 className='titulo'>Afilados Rosario</h1>
-      <CardProject className='card'>
-          <ProjectImg loading='lazy' />
-          <Link to='https://www.afiladosrosario.com.ar/'>
-            <Button className='info'><BsBoxArrowUpRight/> View </Button>   
-          </Link>
-      </CardProject>
-      </ContainerCard>
-
-      <ContainerCard>
-        <h1 className='titulo'> Afilados Rosario</h1>
-      <CardProject className='card'>
-          <ProjectImg loading='lazy' />
-          <Link to='https://www.afiladosrosario.com.ar/'>
-            <Button className='info'><BsBoxArrowUpRight/> View </Button>   
-          </Link>
-      </CardProject>
-      </ContainerCard>
-
-      <ContainerCard>
-        <h1 className='titulo'>Afilados Rosario</h1>
-      <CardProject className='card'>
-            <ProjectImg loading='lazy' />
-          <Link to='https://www.afiladosrosario.com.ar/'>
-            <Button className='info'><BsBoxArrowUpRight/> View </Button>   
-          </Link>
-      </CardProject>
+      <Parrafo>
+        <p>Se han utilizado las tecnologias de HTML-CSS-Javascript-Sass
+          Se ha utilizado una libreria llamada Swiper Js que incluye
+          una galeria de imagenes con los distintos productos. Contiene enlaces a redes sociales y un mapa con la localizacion.
+          Es una empresa familiar que ofrece servicios de afilados. al estar vinculado a Google Mi negocio, aumento exponencialmente su clientela.
+        </p>
+      </Parrafo>
       </ContainerCard>
 
     </ContainerProject>

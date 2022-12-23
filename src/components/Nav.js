@@ -1,5 +1,5 @@
 import React from 'react'
-import liodev from '../images/liodev.png'
+import liodev from '../images/liodev.svg'
 import styled from 'styled-components';
 import {Link} from 'react-scroll'
 
