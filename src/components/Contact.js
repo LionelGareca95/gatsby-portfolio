@@ -65,12 +65,7 @@ const Icons = styled.div`
   gap: 3rem;
   font-size: 2.5rem;
 `
-const Img = styled.img`
- position: absolute;
- z-index: -1;
- height: 10rem;
- 
-`
+
 const iconLinkedin = {
   color: "#1B2EED"
 }
@@ -93,11 +88,11 @@ const Footer = styled.div`
     <div>
       <BackgroundBottom/>
     <Wtp>
-      <Link 
+      <a 
         target="_blank" rel="noopener noreferrer" 
-        to='https://api.whatsapp.com/send?phone=3412536684'>
+        href='https://api.whatsapp.com/send?phone=3412536684'>
         <BsWhatsapp className='wtp' style={style}/>
-      </Link>
+      </a>
     </Wtp>
     
     <ContainerTitle>

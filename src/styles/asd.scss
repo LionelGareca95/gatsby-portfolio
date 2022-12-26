@@ -1,0 +1,57 @@
+$color_1: white;
+$color_2: #fff;
+$background-color_1: #D14627;
+
+.logo {
+	width: 4rem;
+}
+.logo-p {
+	color: $color_1;
+	font-size: 1.5rem;
+}
+
+	li {
+		&:nth-child(2) {
+			margin-left: 5rem;
+			margin-right: 5rem;
+		}
+	}
+
+
+.nav-menu-link {
+	color: $color_2;
+	text-decoration: none;
+}
+
+.hamburguesa {
+	color: $color_1;
+}
+@media (max-width: 768px) {
+	
+		li {
+			&:nth-child(2) {
+				margin: 0;
+			}
+		}
+
+	.nav-menu_active {
+		height: 100vh;
+		background-color: $background-color_1;
+		left: 0;
+		z-index: 999;
+	}
+	.nav-menu-item {
+		text-align: center;
+		list-style: none;
+		width: 13rem;
+		margin: 3rem 0;
+		border-bottom: 2px solid transparent;
+		&:hover {
+			border-bottom: 2px solid #000;
+		}
+	}
+	.nav-menu-link {
+		text-decoration: none;
+		font-size: 2.5rem;
+	}
+}
