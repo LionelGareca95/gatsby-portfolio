@@ -3,9 +3,11 @@ import styled from 'styled-components';
 import afilados from '../images/afilados.webp';
 import SayQuality from '../images/sayquality.webp' 
 import constructora from '../images/constructora.webp' 
-import { BsBoxArrowUpRight } from 'react-icons/bs';
+import pelisReact from '../images/pelisreact.webp' 
+import { BsBoxArrowUpRight, BsGithub } from 'react-icons/bs';
 import { Link } from "gatsby";
-import {FcBriefcase} from 'react-icons/Fc'
+import {FcBriefcase, AiFillGithub} from 'react-icons/fc'
+
 
 
 const ContainerProject = styled.div`
@@ -19,7 +21,7 @@ const ContainerProject = styled.div`
       grid-template-columns: repeat(2,minmax(0, 1fr))
     }
      h1 {
-      padding: 2rem;
+      padding-bottom: 2rem;
      }
 
 `;
@@ -83,6 +85,16 @@ max-width: 600px;
     font-size: 1.2rem;
   }
 `
+const Github = styled.a`
+  color: white;
+  padding: .5rem;
+  border-radius: .5rem;
+
+  &:hover {
+    color: orange;
+  }
+ 
+`
 
 const Project = () => {
   return (
@@ -91,9 +103,9 @@ const Project = () => {
     <ContainerProject>
           
       <ContainerCard>
-        <h1>Afilados Rosario</h1>
+        <h1>Afilados Rosario <Github target="_blank" rel="noopener noreferrer" href='https://github.com/LionelGareca95/AfiladosRosario'><BsGithub/></Github></h1> 
       <CardProject className='card'>
-            <img src={afilados} loading='lazy' alt='Afilados Rosario'/>
+            <img src={afilados} alt='Afilados Rosario'/>
           <a target="_blank" rel="noopener noreferrer" href='https://www.afiladosrosario.com.ar/'>
             <Button className='info'><BsBoxArrowUpRight/> View </Button>   
           </a>
@@ -108,9 +120,9 @@ const Project = () => {
       </ContainerCard>
 
       <ContainerCard>
-        <h1>Say Quality</h1>
+        <h1>Say Quality <Github target="_blank" rel="noopener noreferrer" href='https://github.com/LionelGareca95/AfiladosRosario'><BsGithub/></Github></h1>
       <CardProject className='card'>
-          <img src={SayQuality} loading='lazy' alt='Say Quality' />
+          <img src={SayQuality} alt='Say Quality' />
           <a target="_blank" rel="noopener noreferrer" href='https://www.afiladosrosario.com.ar/'>
             <Button className='info'><BsBoxArrowUpRight/> View </Button>   
           </a>
@@ -122,9 +134,9 @@ const Project = () => {
       </ContainerCard>
 
       <ContainerCard>
-        <h1> Afilados Rosario</h1>
+        <h1> A85 Constructora <Github target="_blank" rel="noopener noreferrer" href='https://github.com/LionelGareca95/AfiladosRosario'><BsGithub/></Github></h1>
       <CardProject className='card'>
-          <img loading='lazy' src={constructora} alt='Constructora'/>
+          <img  src={constructora} alt='Constructora'/>
           <a target="_blank" rel="noopener noreferrer" href='https://constructora85.netlify.app/'>
             <Button className='info'><BsBoxArrowUpRight/> View </Button>   
           </a>
@@ -139,10 +151,10 @@ const Project = () => {
       </ContainerCard>
 
       <ContainerCard>
-        <h1 className='titulo'>Afilados Rosario</h1>
+        <h1 className='titulo'>Pelis React <Github target="_blank" rel="noopener noreferrer" href='https://github.com/LionelGareca95/AfiladosRosario'><BsGithub/></Github></h1>
       <CardProject className='card'>
-            <img loading='lazy' alt='asd' />
-          <a target="_blank" rel="noopener noreferrer" href='https://www.afiladosrosario.com.ar/'>
+            <img src={pelisReact} alt='asd' />
+          <a target="_blank" rel="noopener noreferrer" href='https://pelisreact.netlify.app/'>
             <Button className='info'><BsBoxArrowUpRight/> View </Button>   
           </a>
       </CardProject>

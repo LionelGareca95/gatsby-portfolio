@@ -21,9 +21,16 @@ const Logo = styled.div`
   flex-direction: column;
   align-items: center;
 
-  img {padding-bottom: .1rem;}
+  img {
+    padding-bottom: .1rem;
+    width: 3rem;
+    
+  }
   
-  p {color: #D14627;} 
+  p {
+    color: #D14627;
+    font-size: 1.4rem;
+    } 
 `;
 
 const Navbar = styled.div`
@@ -73,7 +80,12 @@ const List = styled.ul`
     height: 100vh;
     overflow-y: auto;
     transition: 1s;
-}`;
+
+    
+}
+
+
+`;
 
 const Nav = () => {
   return (
@@ -81,7 +93,7 @@ const Nav = () => {
     <>
       <Navbar>
       <Logo>
-        <img src={logo} className='logo'/>
+        <img src={logo} className='logo' alt="Logo"/>
           <p className='logo-p'>Lio Dev</p>
       </Logo>
         
