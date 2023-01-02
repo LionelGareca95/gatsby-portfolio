@@ -128,7 +128,7 @@ useEffect(() => {
   return (
       <Form onSubmit={handleSubmit} method="POST" action='https://formspree.io/f/xwkjeedy' autoComplete='off'>
       <fieldset>Send a message</fieldset>
-      <div class="field">
+      <div className="field">
         <input 
           type="text" 
           name='name'
@@ -143,7 +143,7 @@ useEffect(() => {
       </div>
         <ValidationError prefix="Name" field="name" errors={state.errors}/>
         
-      <div class="field">
+      <div className="field">
         <input 
           type="email" 
           name='email'
@@ -156,7 +156,7 @@ useEffect(() => {
         {errorEmail && <Error>{errorEmail}</Error>}
       </div>
 
-      <div class="field">
+      <div className="field">
         <textarea 
           type="text" 
           name='message' 

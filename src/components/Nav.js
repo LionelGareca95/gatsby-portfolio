@@ -57,35 +57,6 @@ const Button = styled.button`
   }
    
 `;
-const List = styled.ul`
-
-  display: flex;
-
-  li:nth-child(2) {
-  margin-left: 5rem;
-  margin-right: 5rem;
-}
-
-@media (max-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-    position: fixed;
-    top: 0;
-    left: 100%;
-    width: 100%;
-    height: 100vh;
-    overflow-y: auto;
-    transition: 1s;
-
-    
-}
-
-
-`;
 
 const Nav = () => {
   return (
@@ -97,23 +68,23 @@ const Nav = () => {
           <p className='logo-p'>Lio Dev</p>
       </Logo>
         
-        <List className='nav-menu'>
+        <ul className='nav-menu'>
           <li className='nav-menu-item'>
-            <Link to='/cursos' className='nav-menu-link' onClick={() => closeMenu()}>
-              Cursos
+            <Link to="projects" spy={true} smooth={true} offset={10} duration={600} className='nav-menu-link' onClick={() => closeMenu()}>
+              Project
             </Link>
           </li>
           <li className='nav-menu-item'>
-            <Link to='/equipo' className='nav-menu-link' onClick={() => closeMenu()}>
-              Equipo
+            <Link to="skills" spy={true} smooth={true} offset={10} duration={800} className='nav-menu-link' onClick={() => closeMenu()}>
+              Skills
             </Link>
           </li>
           <li className='nav-menu-item'>
-            <Link to='/contacto' className='nav-menu-link' onClick={() => closeMenu()}>
-              Contacto
+            <Link to="contact" spy={true} smooth={true} offset={10} duration={1000} className='nav-menu-link' onClick={() => closeMenu()}>
+              Contact
             </Link>
           </li>
-          </List>  
+          </ul>  
           <Button
 					onClick={() => {
 						toggleMenu()

@@ -5,8 +5,7 @@ import SayQuality from '../images/sayquality.webp'
 import constructora from '../images/constructora.webp' 
 import pelisReact from '../images/pelisreact.webp' 
 import { BsBoxArrowUpRight, BsGithub } from 'react-icons/bs';
-import { Link } from "gatsby";
-import {FcBriefcase, AiFillGithub} from 'react-icons/fc'
+import {FcBriefcase} from 'react-icons/fc'
 
 
 
@@ -51,12 +50,15 @@ const CardProject = styled.div`
   `;
 
   const ContainerCard = styled.div`
+  box-shadow: 0 0 6px 6px inset rgba(68, 63, 60, .7); 
+  border-radius: 1rem;
+  background-color: rgba(68, 63, 60, .7);
   color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-bottom: 1.8rem;
+  padding: 1.8rem .5rem;
 
 
   `;
@@ -99,7 +101,7 @@ const Github = styled.a`
 const Project = () => {
   return (
     <Container>
-        <Titulo>Projects&nbsp;<FcBriefcase/></Titulo>
+        <Titulo id='projects'>Projects&nbsp;<FcBriefcase/></Titulo>
     <ContainerProject>
           
       <ContainerCard>
