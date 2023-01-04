@@ -1,5 +1,5 @@
 import React from 'react'
-import wave from '../images/wavebottom.svg'
+import wave from '../images/Bottom.svg'
 
 const BackgroundBottom = () => {
   return (

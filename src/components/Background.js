@@ -1,5 +1,5 @@
 import React from 'react'
-import wave from '../images/wavetop.svg'
+import wave from '../images/Top.svg'
 import styled from 'styled-components'
 
 

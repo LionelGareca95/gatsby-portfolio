@@ -96,7 +96,7 @@ const Footer = styled.div`
     </Wtp>
     
     <ContainerTitle id='contact'>
-        <h1>Contacto</h1>
+        <h1>Contact</h1>
         <p>Get in touch 👋</p>
     </ContainerTitle>
 

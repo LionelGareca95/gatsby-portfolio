@@ -14,7 +14,7 @@ const Btn = styled.button`
 
   &:hover {
     cursor: pointer;
-    background-color: rgba(209, 102, 49, .8);
+    opacity: .8;
   }
 `
 const Form = styled.form`
@@ -31,7 +31,7 @@ const Form = styled.form`
       height: 2rem;
       border-radius: .5rem;
       font-size: 1.5rem;
-      background-color: rgba(110, 104, 100, .5);
+      background-color: var(--gris);
 
       &:focus {
         border: 1px solid #f5f5f5;
@@ -45,7 +45,7 @@ const Form = styled.form`
     }
     textarea {
       
-      background-color: rgba(110, 104, 100, .5);
+      background-color: var(--gris);
       padding-left: .5rem;
       border-radius: .5rem;
       font-size: 1.5rem;
@@ -127,7 +127,7 @@ useEffect(() => {
 
   return (
       <Form onSubmit={handleSubmit} method="POST" action='https://formspree.io/f/xwkjeedy' autoComplete='off'>
-      <fieldset>Send a message</fieldset>
+      <fieldset>Send me a message</fieldset>
       <div className="field">
         <input 
           type="text" 

@@ -18,9 +18,9 @@ const CodeIcons = styled.div`
     @media (min-width: 1100px) { 
       grid-template-columns: repeat(4,minmax(0, 1fr))
     }
-    box-shadow: 0 0 6px 6px inset rgba(68, 63, 60, .7); 
+    box-shadow: var(--boxShadow); 
     border-radius: 1rem;
-    background-color: rgba(68, 63, 60, .7);
+    background-color: var(--card);
 
 `;
 
@@ -33,7 +33,7 @@ const Title = styled.h1`
 `
 
 const Container = styled.div`
-background-color: #302F2E;
+ background-color: var(--gris);
 
 `
 const Iconos = styled.div`

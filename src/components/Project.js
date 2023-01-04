@@ -50,9 +50,9 @@ const CardProject = styled.div`
   `;
 
   const ContainerCard = styled.div`
-  box-shadow: 0 0 6px 6px inset rgba(68, 63, 60, .7); 
+  box-shadow: var(--boxShadow); 
   border-radius: 1rem;
-  background-color: rgba(68, 63, 60, .7);
+  background-color: var(--card);
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -73,7 +73,7 @@ const CardProject = styled.div`
   `
 
   const Container = styled.div`
-    background-color: #302F2E;
+    background-color: var(--gris);
   `
 
 const Parrafo = styled.div`

@@ -1,6 +1,8 @@
 :root {
     --naranja: #D14627;
-    --gris: #3d3734;
+    --gris: #25282a;
+    --boxShadow: 0 0 6px 6px inset #232323;
+    --card: rgba(42, 45, 46, 1);
 }
 html {
   overflow-x: hidden; 
@@ -265,15 +267,18 @@ body {
 }
 
 .nav-menu-item {
-	padding: 1rem;
+  padding: 1rem;
 	list-style: none;
 	border-bottom: 2px solid transparent;
+  
+}
+.nav-menu-item a {
+  color: white;
 }
 
 .nav-menu-item:hover{
-
-		border-bottom: 2px solid orange;
-	
+    cursor: pointer;
+		border-bottom: 2px solid var(--naranja);
 }
 
 .nav-menu-link {
@@ -289,6 +294,9 @@ body {
 	background: none;
 	border: none;
 }
+.nav-menu {
+  display: flex;
+}
 
 @media (max-width: 768px) {
 	.nav-menu {
@@ -296,7 +304,6 @@ body {
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-
 		background: linear-gradient(to left, #A3450C , #6C2C06);
     outline: none;
 
@@ -305,7 +312,7 @@ body {
 		top: 0;
 		left: 100%;
 		width: 100%;
-		height: calc(100vh);
+		height: 100vh;
 		overflow-y: auto;
 
 		transition: 1s;
@@ -333,7 +340,7 @@ body {
 	}
   .nav-menu-item:hover {
 
-			border-bottom: 2px solid orange;
+			border-bottom: 2px solid black;
 		
   }
 
