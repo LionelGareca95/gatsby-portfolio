@@ -1,24 +1,24 @@
 import React from 'react'
 import styled from 'styled-components';
-import { Link } from "gatsby"
+import wtp from '../images/whatsapp.svg'
 import { MdEmail} from 'react-icons/md';
 import { GrLinkedin} from 'react-icons/gr';
-import { BsGithub, BsWhatsapp } from 'react-icons/bs';
+import { BsGithub} from 'react-icons/bs';
 import Formulario from './Formulario';
 import BackgroundBottom from './BackgroundBottom';
 
 const Contact = () => {
 
-  const style = {
-    "font-size": "50px",
-    color: "green",
-  }
   const Wtp = styled.div`
     position: fixed;
     bottom: 0;
     padding: 1rem;  
 `;
-
+const Imagen = styled.div`
+img {
+  width: 3rem;
+}
+`
 const ContainerTitle = styled.div`
 margin-top: 8rem;
   h1, p {
@@ -90,8 +90,10 @@ const Footer = styled.div`
     <Wtp>
       <a 
         target="_blank" rel="noopener noreferrer" 
-        href='https://api.whatsapp.com/send?phone=3412536684'>
-        <BsWhatsapp className='wtp' style={style}/>
+        href='https://api.whatsapp.com/send?phone=3416568944'>
+        <Imagen>
+          <img src={wtp} alt="Img Wtp"/>
+        </Imagen>
       </a>
     </Wtp>
     
@@ -104,26 +106,26 @@ const Footer = styled.div`
 
         <Icons>
 
-          <Link 
+          <a 
               target="_blank" rel="noopener noreferrer" 
               to='https://mail.google.com/mail/u/0/#inbox?compose=new'>
               <MdEmail style={iconsMail}/>
               <p css={`font-size: 1.5rem; color: white; margin: 0;`}>Email</p>
-          </Link>
+          </a>
 
-          <Link 
+          <a 
             target="_blank" rel="noopener noreferrer" 
             to='https://www.linkedin.com/in/lionel-gareca-8a1b67221/'>
               <GrLinkedin style={iconLinkedin} />
               <p css={`font-size: 1.5rem; color: white; margin: 0;`}>Linkedin</p>
-          </Link>
+          </a>
 
-            <Link 
+            <a 
             target="_blank" rel="noopener noreferrer" 
             to='https://github.com/LionelGareca95'>
               <BsGithub style={iconsGithub}/>
               <p css={`font-size: 1.5rem; color: white; margin: 0;`}>Github</p>
-            </Link>
+            </a>
 
         </Icons>
       

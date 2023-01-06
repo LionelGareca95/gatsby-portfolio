@@ -1,9 +1,15 @@
 import React from 'react';
-import { useForm, ValidationError } from '@formspree/react';
+import { useForm} from '@formspree/react';
 import styled from 'styled-components';
 import Swal from 'sweetalert2'
 import { useState, useEffect } from 'react'
 
+const Error = styled.p`
+    color: red;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 5px;
+`
 const Btn = styled.button`
   color: #fff;
   height: 2.5rem;
@@ -28,10 +34,10 @@ const Form = styled.form`
     input {
       padding-left: .5rem;
       width: 20rem;
-      height: 2rem;
       border-radius: .5rem;
       font-size: 1.5rem;
       background-color: var(--gris);
+      color: white;
 
       &:focus {
         border: 1px solid #f5f5f5;
@@ -59,12 +65,6 @@ const Form = styled.form`
     }
    
 `;
-const Error = styled.div`
-color: red;
-font-size: 1rem;
-font-weight: 700;
-padding: 5px;
-`
 
 function ContactForm() {
 
@@ -115,14 +115,15 @@ useEffect(() => {
 
 
   if (state.succeeded) {
-   return Swal.fire({
+    Swal.fire({
     title: 'Message sent succesfully!',
     text: 'Return to home',
     icon: 'success',
     confirmButtonText: 'Ok',
     confirmButtonColor: '#D14627'
   })
-}
+
+} 
 
 
   return (
@@ -141,7 +142,7 @@ useEffect(() => {
         <label htmlFor='name' title='Name' data-title='Name'/>
         {errorName && <Error>{errorName}</Error>}
       </div>
-        <ValidationError prefix="Name" field="name" errors={state.errors}/>
+       
         
       <div className="field">
         <input 
@@ -167,7 +168,7 @@ useEffect(() => {
         <label className='message' htmlFor='Message' title='Message' data-title='Message'/>
       </div>
 
-      <Btn type="submit">Submit</Btn>
+      <Btn type="submit" disabled={state.submitting}>Submit</Btn>
       
     </Form>
   );
