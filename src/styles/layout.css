@@ -7,6 +7,7 @@
 html {
   overflow-x: hidden; 
   max-width: 100%;
+  font-family: 'Lexend', sans-serif;
 }
 *{
   margin: 0; 
@@ -98,14 +99,16 @@ body {
   }
  .helloo {
   color: white;
+  font-size: 1.4rem;
  }
   .hello {
     color: white;
+    font-size: 1.4rem;
     margin-bottom: 3rem;
   }
  
   .first {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: black; 
     
   text-shadow:
@@ -115,7 +118,7 @@ body {
     1px 1px 0 white;  
   }
   .second {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: #D14627;
     animation: second 3s ease-in-out infinite;
   }

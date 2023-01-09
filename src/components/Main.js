@@ -12,7 +12,7 @@ const ContainerMain = styled.div`
    grid-template-columns: repeat(1, 1fr);
    align-items: center;
    justify-content: center;
-   @media (min-width: 720px) {
+   @media (min-width: 790px) {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -119,7 +119,7 @@ const Buttons = styled.div`
 		padding: .5rem;
 		border-radius: .5rem;
 		font-size: 1.2rem;
-		width: 11rem;
+		width: 12rem;
 		color: white;
 		background: linear-gradient(90deg, rgba(148,60,40,1) 35%, rgba(172,76,47,1) 62%, rgba(181,66,30,1) 80%);
 
