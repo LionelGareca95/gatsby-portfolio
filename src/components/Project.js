@@ -122,10 +122,10 @@ const Project = () => {
       </ContainerCard>
 
       <ContainerCard>
-        <h1>Say Quality <Github target="_blank" rel="noopener noreferrer" href='https://github.com/LionelGareca95/AfiladosRosario'><BsGithub/></Github></h1>
+        <h1>Say Quality <Github target="_blank" rel="noopener noreferrer" href='https://github.com/LionelGareca95/proyectoSayQuality'><BsGithub/></Github></h1>
       <CardProject className='card'>
           <img src={SayQuality} alt='Say Quality' />
-          <a target="_blank" rel="noopener noreferrer" href='https://www.afiladosrosario.com.ar/'>
+          <a target="_blank" rel="noopener noreferrer" href='https://say-quality.com/'>
             <Button className='info'><BsBoxArrowUpRight/> View </Button>   
           </a>
       </CardProject>
@@ -136,7 +136,7 @@ const Project = () => {
       </ContainerCard>
 
       <ContainerCard>
-        <h1> A85 Constructora <Github target="_blank" rel="noopener noreferrer" href='https://github.com/LionelGareca95/AfiladosRosario'><BsGithub/></Github></h1>
+        <h1> A85 Constructora <Github target="_blank" rel="noopener noreferrer" href='https://github.com/LionelGareca95/Constructora'><BsGithub/></Github></h1>
       <CardProject className='card'>
           <img  src={constructora} alt='Constructora'/>
           <a target="_blank" rel="noopener noreferrer" href='https://constructora85.netlify.app/'>
@@ -153,7 +153,7 @@ const Project = () => {
       </ContainerCard>
 
       <ContainerCard>
-        <h1 className='titulo'>Pelis React <Github target="_blank" rel="noopener noreferrer" href='https://github.com/LionelGareca95/AfiladosRosario'><BsGithub/></Github></h1>
+        <h1 className='titulo'>Pelis React <Github target="_blank" rel="noopener noreferrer" href='https://github.com/LionelGareca95/PelisReactBack'><BsGithub/></Github></h1>
       <CardProject className='card'>
             <img src={pelisReact} alt='asd' />
           <a target="_blank" rel="noopener noreferrer" href='https://pelisreact.netlify.app/'>

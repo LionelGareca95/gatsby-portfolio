@@ -1,0 +1,17 @@
+body::-webkit-scrollbar {
+    width: 1rem;
+  }
+
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: var(--naranja);
+  }
+
+  body::-webkit-scrollbar-track {
+    background: var(--gris);
+  }
+
+  body::-webkit-scrollbar-thumb {
+    border-radius: .5rem;
+    background: linear-gradient(to left, #A3450C , #6C2C06);
+  }

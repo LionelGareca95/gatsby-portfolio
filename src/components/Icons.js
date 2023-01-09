@@ -1,7 +1,7 @@
 import React from 'react'
 import devicon from 'devicon'
 import styled from 'styled-components'
-
+import logo from '../images/styled.svg'
 
 const CodeIcons = styled.div`
     font-size: 4rem;
@@ -40,12 +40,19 @@ const Iconos = styled.div`
   border-radius: 1rem;
   
 `
+const github = {
+  color: "white"
+}
+const component = {
+  width: "60px",
+  
+}
 const Icons = () => {
 
   return (
     <Container>
       
-      <Title id='tecnologhies'>Skills</Title>
+      <Title id='skills'>Skills</Title>
     <CodeIcons>   
       <Iconos> <i className="devicon-html5-plain-wordmark colored"></i></Iconos> 
         <i className="devicon-css3-plain-wordmark colored"></i>  
@@ -55,8 +62,9 @@ const Icons = () => {
         <i className="devicon-nodejs-plain colored"></i>
         <i className="devicon-mongodb-plain-wordmark colored"></i>    
         <i className="devicon-git-plain-wordmark colored"></i>    
-        <i className="devicon-github-original-wordmark colored"></i>
-        <i className="devicon-gatsby-plain colored"></i>      
+        <i style={github} className="devicon-github-original-wordmark colored"></i>
+        <i className="devicon-gatsby-plain colored"></i>   
+        <img src={logo} alt="styled" style={component}/>
     </CodeIcons>
 
     </Container>

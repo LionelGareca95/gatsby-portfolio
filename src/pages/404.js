@@ -7,12 +7,12 @@ export default function NotFound() {
 
   const Container = styled.div`
     height: 100vh;
-    width: 100%;
+    width: 100vw;
   `
   return (
     <Layout>
       <Container>
-          <img src={notfound} alt="404" loading="lazy" />
+          <img src={notfound} alt="404" loading="lazy" className="notFound"/>
       </Container>
     </Layout>
   )

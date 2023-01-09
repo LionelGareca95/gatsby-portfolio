@@ -133,22 +133,22 @@ const Main = () => {
   return (
 
     <ContainerMain>
-        <Description>
-            <h2><span className='span'>👋</span>  Hi, my name is Lionel Gareca</h2> 
-            <h2>I am a</h2> 
 
+        <Description>
+            <h2 className='helloo'><span className='span'>👋</span>  Hi, my name is Lionel Gareca</h2> 
+            <h2 className='hello'>and i am a</h2> 
             <h1 className='first title'>Front-End Developer</h1>
             <h1 className='second title'>Front-End Developer</h1>
 			<Buttons>
 				<a href="cv.pdf" target="_blank" rel="noopener noreferrer"> Download CV <HiOutlineDownload className='icon'/></a>
-			</Buttons>
-			
+			</Buttons>	
         </Description>
+
         <Description >
           <img src={programmer} alt="Img Programador"/>
         </Description>
         
-        <Link to="tecnologhies" spy={true} smooth={true} offset={10} duration={600}>
+        <Link to="skills" spy={true} smooth={true} offset={10} duration={600}>
 			<Arrow>
 				<div className="mouse">
 				<div className="mouse-in"></div>

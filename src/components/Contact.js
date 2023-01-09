@@ -11,6 +11,7 @@ const Contact = () => {
 
   const Wtp = styled.div`
     position: fixed;
+    z-index: 998;
     bottom: 0;
     padding: 1rem;  
 `;
@@ -108,21 +109,21 @@ const Footer = styled.div`
 
           <a 
               target="_blank" rel="noopener noreferrer" 
-              to='https://mail.google.com/mail/u/0/#inbox?compose=new'>
+              href='https://mail.google.com/mail/u/0/#inbox?compose=new'>
               <MdEmail style={iconsMail}/>
               <p css={`font-size: 1.5rem; color: white; margin: 0;`}>Email</p>
           </a>
 
           <a 
             target="_blank" rel="noopener noreferrer" 
-            to='https://www.linkedin.com/in/lionel-gareca-8a1b67221/'>
+            href='https://www.linkedin.com/in/lionel-gareca-8a1b67221/'>
               <GrLinkedin style={iconLinkedin} />
               <p css={`font-size: 1.5rem; color: white; margin: 0;`}>Linkedin</p>
           </a>
 
             <a 
             target="_blank" rel="noopener noreferrer" 
-            to='https://github.com/LionelGareca95'>
+            href='https://github.com/LionelGareca95'>
               <BsGithub style={iconsGithub}/>
               <p css={`font-size: 1.5rem; color: white; margin: 0;`}>Github</p>
             </a>

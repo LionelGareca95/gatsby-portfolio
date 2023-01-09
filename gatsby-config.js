@@ -1,10 +1,11 @@
 /**
- * @type {import('gatsby').GatsbyConfig}
- */
+ * @type {import('gatsby').GatsbyConfig}*/
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Portfolio`,
-    siteUrl: `https://www.yourdomain.tld`
+    title: `LioDev`,
+    description: `Portfolio Front-End Lionel Gareca`,
+    image: `../images/favicon.png`,
+    siteUrl: `https://liodev.netlify.app/`
   },
   plugins: [
   "gatsby-plugin-styled-components",

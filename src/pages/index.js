@@ -7,6 +7,7 @@ import Icons from "../components/Icons";
 import Project from "../components/Project";
 import Contact from "../components/Contact";
 import Background from "../components/Background";
+import { SEO } from "../components/seo";
 
 
 const IndexPage = () => {
@@ -25,4 +26,6 @@ const IndexPage = () => {
 
 export default IndexPage
 
-export const Head = () => <title>LioDev</title>
+export const Head = () =>  (
+    <SEO/>
+)
